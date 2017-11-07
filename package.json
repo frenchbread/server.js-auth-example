@@ -1,0 +1,17 @@
+{
+  "name": "server.js-auth-example",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "jsonwebtoken": "7.3.0",
+    "mongoose": "^4.13.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "2.2.1",
+    "server": "^1.0.1"
+  },
+  "description": "PassportJS + JWT + ServerJS",
+  "repository": "https://github.com/frenchbread/server.js-auth-example",
+  "author": "Damir Mustafin <damir.mustafin@protonmail.ch>"
+}
