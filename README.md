@@ -4,6 +4,8 @@
 
 ### Setup
 
+> **NOTE:** requires MongoDB up and running
+
 ```bash
 # Clone repo
 ❯ git clone https://github.com/frenchbread/server.js-auth-example.git && cd server.js-auth-example
@@ -21,6 +23,8 @@
 
 #### Register new user
 
+##### `POST` - `/register`
+
 ```bash
 ❯ curl -H "Content-Type: application/json" -X POST -d '{"email":"some@mail.com","password":"somepassword"}' http://localhost:3030/register
 
@@ -30,6 +34,8 @@
 
 #### Login
 
+##### `POST` - `/login`
+
 ```bash
 ❯ curl -H "Content-Type: application/json" -X POST -d '{"email":"some@mail.com","password":"somepassword"}' http://localhost:3030/login
 
@@ -38,6 +44,8 @@
 ```
 
 #### Verify
+
+##### `GET` - `/verify`
 
 ```bash
 ❯ curl -H 'Authorization: JWT <received_jwt_token>' -X GET http://127.0.0.1:3030/verify
