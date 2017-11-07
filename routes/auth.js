@@ -19,7 +19,7 @@ module.exports = [
     const { email, password } = ctx.data
 
     return userModel.authenticate(email, password)
-      .then(message => json({ ok: true, message }))
+      .then(data => json({ ok: true, data }))
       .catch(err => json({ ok: false, err: err.message }))
   }),
   get('/verify', modern(passport.authenticate('jwt', { session: false })), ctx => {

@@ -40,7 +40,7 @@
 ❯ curl -H "Content-Type: application/json" -X POST -d '{"email":"some@mail.com","password":"somepassword"}' http://localhost:3030/login
 
 # Server reply
-{"ok":true,"message":{"user":{"_id":"5a0129ec1cc973ec2e92b985","email":"some@mail.com"},"token":"<jwt_token_here>"}}
+{"ok":true,"data":{"user":{"_id":"5a0129ec1cc973ec2e92b985","email":"some@mail.com"},"token":"<received_jwt_token>"}}
 ```
 
 #### Verify
